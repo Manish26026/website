@@ -1,0 +1,162 @@
+:root {
+    --main-color-start: #d573d3; 
+    --main-color-end: #518ef8;   
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: linear-gradient(90deg, rgba(213,115,211,1) 0%, rgba(81,142,248,1) 100%);
+    box-sizing: border-box;
+}
+
+.top-text {
+    font-size: xxx-large;
+    background: linear-gradient(90deg, rgba(213,115,211,1) 0%, rgba(81,142,248,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: row; 
+}
+
+.registration-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.input-field,
+.dropdown-field,
+.login-button,
+.back-button,
+.social-icons,
+.login-link,
+.otp-input {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.input-field,
+.dropdown-field,
+.login-button,
+.otp-input {
+    font-size: 16px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.back-button {
+    font-size: 14px;
+    margin-top: 15px;
+    padding: 12px; 
+    border-radius: 4px; 
+    width: 45px;
+    border: 2px solid gainsboro;
+}
+
+.registration-form-button {
+    display: flex;
+    justify-content: left;
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icon {
+    margin: 0 15px;
+    flex: 3;
+    font-size: 24px;
+    cursor: pointer;
+    color: linear-gradient(90deg, rgba(213,115,211,1) 0%, rgba(81,142,248,1) 100%);
+}
+
+.or-line {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #727171;
+}
+
+.or-line hr {
+    flex: 1;
+    border: none;
+    height: 1px;
+    background-color: #727171;
+}
+
+@media (max-width: 768px) {
+    .registration-form {
+        width: 80%;
+    }
+}
+
+.input-field,
+.social-icon,
+.dropdown-field,
+.otp-input {
+    font-size: 25px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid;
+    border-image: linear-gradient(90deg, rgba(213, 115, 211, 1) 0%, rgba(81, 142, 248, 1) 100%);
+    border-image-slice: 1;
+    border-radius: 9px;
+}
+
+.login-button {
+    font-size: 25px;
+    color: #f5f5f5;
+    font-weight: 600;
+    padding: 20px;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, rgba(213, 115, 211, 1) 0%, rgba(81, 142, 248, 1) 100%);
+    border: 2px solid transparent;
+}
+
+.above {
+    flex: 2;
+}
+
+.below {
+    flex: 1;
+    align-items: end;
+    justify-content: center;
+}
+
+.otp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 70px;
+ 
+    
+    
+}
+
+.otp-input{
+    flex: 1;
+    
+    text-align: center;
+}
+.login-link{
+    margin-bottom: 0;
+}
